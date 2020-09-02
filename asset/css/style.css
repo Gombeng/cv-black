@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+section{
+    display: block;
+    margin: 20px auto;
+    min-height: 80vh;
+    opacity: .8;
+    padding: 20vh;
+}
+section span{
+    color: rgb(0, 146, 127);
+}
+
+/* header */
+header{
+    width: 100%;
+    height: 50px;
+}
+
+nav a.icon{
+    display: none;
+}
+
+p.head{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+nav p.head{
+    float: left;
+    display: block;
+    padding: 20px;
+    margin: 0 20px;
+    letter-spacing: .5px;
+    margin-left: 10vh;
+
+}
+nav .right{
+    float: right;
+    margin-right: 10vh;
+}
+
+nav ul li{
+    float: left;
+    padding: 20px;
+    margin: 0 10px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 22px;
+    opacity: .7;
+}
+nav ul li a:hover{
+    opacity: 1;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    min-height: 50px;
+    background-color: #000;
+}
+
+/* header */
+
+
+main{
+    width: 100%;
+}
+
+/* home */
+section.home{
+    width: 80%;
+}
+
+section.home h1{
+    font-size: 3em;
+    letter-spacing: 1px;
+}
+section.home p{
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    padding: 20px;
+}
+section.home img{
+    width: 70px;
+    float: right;
+}
+
+
+/* home */
+
+
+
+
+/* profil */
+section.profil{
+    width: 50%;
+}
+section.profil img{
+    float: right;
+    width: 300px;
+    border-radius: 80%;
+}
+
+section.profil .id{
+    padding: 20px;
+    display: inline-block;
+}
+
+section.profil h1{
+    padding-bottom: 20px;
+}
+
+section.profil .id p{
+    padding: 8px 0;
+}
+.profil a{
+    color: #fff;
+    text-decoration: none;
+    opacity: .6;
+}
+.profil a:hover{
+    opacity: 1;
+}
+
+
+.profil a p img{
+    width: 22px;
+    padding: 0 10px;
+    float: left;
+}
+
+/* profil */
+
+
+
+/* contact */
+section.contact{
+    width: 60%;
+}
+
+section p{
+    padding: 8px 0;
+}
+
+.form textarea,
+.form input[type=text] {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 12px 0;
+    box-sizing: border-box;
+    resize: none;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+}
+
+input[type=button]{
+    font-size: 12px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    opacity: .5;
+}
+
+input[type=button]:hover{
+    opacity: 1;
+    transition: ease .2s;
+}
+/* contact */
+
+
+/* footer */
+footer{
+    min-height: 50px;
+}
+footer p{
+    padding: 20px;
+    text-align: center;
+}
+/* footer */
+
+
+    @media screen and (max-width: 720px) {
+        #myLinks {
+            display: none;
+        }
+        nav a.icon {
+            background: black;
+            display: block;
+            position: absolute;
+            padding: 20px;
+            right: 0;
+            top: 0;
+            color: #fff;
+        }nav a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+        section.profil img{
+            float: none;
+            width: 200px;
+        }
+        .profil h1{
+            font-size: 18px;
+        }
+
+        section.home img{
+            float: none;
+            padding: 20px 0;
+        }
+        .profil{
+            text-align: center;
+        }
+        section{
+            min-height: 50vh;
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        nav p.head{
+            font-size: 16px;
+        }
+        nav ul li{
+            padding: 2px;
+            margin: 0 6px;
+        }
+        nav ul li a{
+            font-size: 12px;
+        }
+
+        section.home p{
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        section.home img{
+            float: none;
+            padding: 20px 0;
+        }
+
+        section.profil img{
+            float: none;
+            margin: 0 auto;
+        }
+        .profil{
+            text-align: center;
+        }
+        .profil h1{
+            font-size: 16px;
+        }
+        .profil p{
+            font-size: 12px;
+        }
+        section{
+            min-height: 50vh;
+            width: 100%;
+        }
+
+    }
